@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { Card, Header, Hero } from "@/components"
+import { Header, Hero, InterviewCard } from "@/components"
 
 export default function Page() {
   return (
@@ -8,7 +8,7 @@ export default function Page() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <section id="questions" className="w-full py-6 md:py-24 lg:py-16 bg-gray-100 dark:bg-gray-800">
+        <section id="questions" className="w-full py-6 md:py-24 lg:py-16">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -22,9 +22,7 @@ export default function Page() {
 
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
-              <Card />
-              <Card />
-              <Card />
+              <InterviewCard />
             </div>
           </div>
         </section>

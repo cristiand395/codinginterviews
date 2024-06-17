@@ -1,3 +1,3 @@
-export * from './header'
-export * from './hero'
-export * from './card'
+export * from './Header'
+export * from './Hero'
+export * from './InterviewCard'

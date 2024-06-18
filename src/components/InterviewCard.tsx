@@ -10,7 +10,7 @@ import {
 
 export function InterviewCard() {
   return (
-    <Card className="w-[350px]">
+    <Card>
       <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Level: Junior</CardDescription>

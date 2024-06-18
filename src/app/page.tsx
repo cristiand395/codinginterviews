@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { Header, Hero, InterviewCard } from "@/components"
+import { Header, Hero, InterviewCard, MultiSelectSection } from "@/components"
+import { Input } from "@/components/ui/input"
 
 export default function Page() {
   return (
@@ -8,20 +9,15 @@ export default function Page() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <section id="questions" className="w-full py-6 md:py-24 lg:py-16">
+        <section id="questions" className="w-full py-3 md:py-12 lg:py-4">
+          <div className="container px-4 md:px-6 flex justify-center">
+            <MultiSelectSection />
+          </div>
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Coding Interview Questions</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Explore a diverse range of coding interview questions covering various topics and difficulty levels.
-                </p>
-              </div>
-            </div>
-            <div>
-
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-6 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
+              <InterviewCard />
+              <InterviewCard />
+              <InterviewCard />
               <InterviewCard />
             </div>
           </div>

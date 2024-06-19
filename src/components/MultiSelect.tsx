@@ -168,9 +168,6 @@ export const MultiSelect = React.forwardRef<
                         )}
                         style={{ animationDuration: `${animation}s` }}
                       >
-                        {/* {IconComponent && (
-                          <IconComponent className="h-4 w-4 mr-2" />
-                        )} */}
                         {option?.label}
                         <XCircle
                           className="ml-2 h-4 w-4 cursor-pointer"

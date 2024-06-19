@@ -9,11 +9,8 @@ export function Header() {
         <CodeIcon className="h-6 w-6" />
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
-        <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-          Questions
-        </Link>
-        <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-          Technologies
+        <Link href="/" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          Interviews
         </Link>
         <ThemeToggle />
       </nav>

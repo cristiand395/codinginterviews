@@ -7,15 +7,15 @@ import { MultiSelect } from "@/components/MultiSelect";
 import { Cat, Dog, Fish, Rabbit, Turtle } from "lucide-react";
 
 const frameworksList = [
-  { value: "react", label: "React", icon: Turtle },
-  { value: "angular", label: "Angular", icon: Cat },
-  { value: "vue", label: "Vue", icon: Dog },
-  { value: "svelte", label: "Svelte", icon: Rabbit },
-  { value: "ember", label: "Ember", icon: Fish },
+  { value: "react", label: "React" },
+  { value: "angular", label: "Angular" },
+  { value: "vue", label: "Vue" },
+  { value: "svelte", label: "Svelte" },
+  { value: "ember", label: "Ember" },
 ];
 
 export function MultiSelectSection() {
-  const [selectedFrameworks, setSelectedFrameworks] = useState<string[]>(["react", "angular"]);
+  const [selectedFrameworks, setSelectedFrameworks] = useState<string[]>([]);
 
   return (
     <div className="w-full sm:w-[600px]">

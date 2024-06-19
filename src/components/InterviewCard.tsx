@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Badge } from "./ui/badge";
 import {
   Card,
@@ -8,19 +9,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export function InterviewCard() {
+export function InterviewCard({ id }: { id: string }) {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Level: Junior</CardDescription>
-      </CardHeader>
-      <CardContent>
-        Given a singly linked list, write a function to reverse the list.
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Badge variant="default">NextJS</Badge>
-      </CardFooter>
-    </Card>
+    <Link href={id}>
+      <Card>
+        <CardHeader>
+          <CardTitle>Create project</CardTitle>
+          <CardDescription>Level: Junior</CardDescription>
+        </CardHeader>
+        <CardContent>
+          Given a singly linked list, write a function to reverse the list.
+        </CardContent>
+        <CardFooter className="flex justify-between">
+          <Badge variant="default">NextJS</Badge>
+        </CardFooter>
+      </Card>
+    </Link>
   )
 }

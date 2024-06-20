@@ -20,7 +20,13 @@ export function InterviewCard({ id }: { id: string }) {
         <CardContent>
           Given a singly linked list, write a function to reverse the list.
         </CardContent>
-        <CardFooter className="flex justify-between">
+        <CardFooter>
+          <Badge variant="default">NextJS</Badge>
+          <Badge variant="default">NextJS</Badge>
+          <Badge variant="default">NextJS</Badge>
+          <Badge variant="default">NextJS</Badge>
+          <Badge variant="default">NextJS</Badge>
+          <Badge variant="default">NextJS</Badge>
           <Badge variant="default">NextJS</Badge>
         </CardFooter>
       </Card>

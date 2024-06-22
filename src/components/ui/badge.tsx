@@ -15,6 +15,12 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
+        nextjs:
+          "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
+        api:
+          "border-transparent bg-yellow-500 text-black hover:bg-primary/80",
+        table:
+          "border-transparent bg-blue-500 text-secondary-foreground",
       },
     },
     defaultVariants: {

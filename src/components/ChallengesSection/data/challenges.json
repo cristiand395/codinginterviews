@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Random Cat",
+    "level": "Junior",
+    "description": "Retrieve a random cat fact, extract the first word from the fact, and then use it to search for a cat image using the cat API and return the image URL. The fact should be displayed in the UI.",
+    "badges": [
+      "JavaScript",
+      "JavaScript"
+    ],
+    "requests": [
+      "Facts Random: https://catfact.ninja/fact.",
+      "Imagen random: https://cataas.com/cat/says/hello.",
+      "Recupera un hecho aleatorio de gatos de la primera API.",
+      "Recuperar la primera palabra del hecho.",
+      "Muestra una imagen de un gato con la primera palabra."
+    ],
+    "repository": "https://github.com/cristiand395/codinginterviews"
+  }
+]

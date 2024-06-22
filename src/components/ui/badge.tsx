@@ -17,7 +17,7 @@ const badgeVariants = cva(
         outline: "text-foreground",
         nextjs:
           "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
-        api:
+        JavaScript:
           "border-transparent bg-yellow-500 text-black hover:bg-primary/80",
         table:
           "border-transparent bg-blue-500 text-secondary-foreground",

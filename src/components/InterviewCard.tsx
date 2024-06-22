@@ -9,25 +9,35 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export function InterviewCard({ id }: { id: string }) {
+
+
+interface Props {
+  id: string;
+  title: string;
+  level: string;
+  description: string;
+  badges: string[];
+  requests: string[];
+  repository: string
+}
+
+export function InterviewCard({ id, title, level, description, badges, requests, repository }: Props) {
   return (
     <Link href={id}>
       <Card>
         <CardHeader>
-          <CardTitle>Create project</CardTitle>
-          <CardDescription>Level: Junior</CardDescription>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>Level: {level}</CardDescription>
         </CardHeader>
         <CardContent>
-          Given a singly linked list, write a function to reverse the list.
+          {description}
         </CardContent>
         <CardFooter className="gap-2">
-          <Badge variant="default">Default</Badge>
-          <Badge variant="secondary">Secondary</Badge>
-          <Badge variant="destructive">Destructive</Badge>
-          <Badge variant="outline">Outline</Badge>
-          <Badge variant="nextjs">NextJS</Badge>
-          <Badge variant="api">API</Badge>
-          <Badge variant="table">Table</Badge>
+          {badges.map((badge) => (
+            <Badge key={badge} variant={badge}>
+              {badge}
+            </Badge>
+          ))}
         </CardFooter>
       </Card>
     </Link>

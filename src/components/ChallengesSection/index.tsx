@@ -1,5 +1,5 @@
 import { InterviewCard } from "../InterviewCard";
-import * as challenges from './data/challenges.json'
+import challenges from './data/challenges.json'
 export default async function Page() {
   return (
     <div className="w-full">

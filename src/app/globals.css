@@ -47,6 +47,14 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+  .truncate-multiline {
+    @apply overflow-hidden text-ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Número de líneas a mostrar */
+    line-height: 1.5em;
+    max-height: 4.5em; /* Ajusta esto según la cantidad de líneas */
+  }
 }
 
   @layer base {

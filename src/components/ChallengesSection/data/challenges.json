@@ -8,11 +8,13 @@
       "JavaScript"
     ],
     "requests": [
-      "Facts Random: https://catfact.ninja/fact.",
-      "Imagen random: https://cataas.com/cat/says/hello.",
-      "Recupera un hecho aleatorio de gatos de la primera API.",
-      "Recuperar la primera palabra del hecho.",
-      "Muestra una imagen de un gato con la primera palabra."
+      "Create and start entrypoint of React without template. ",
+      "Retrieve a random fact from `https://catfact.ninja/fact`. ",
+      "From the first word of the fact, retrieve a random cat image from `https://cataas.com/cat/says/`.",
+      "Create a button to generate a new fact and image.",
+      "Separate the logic of the app into separate files.",
+      "Refactor with Custom Hook for the logic.",
+      "Create basic tests."
     ],
     "repository": "https://github.com/cristiand395/codinginterviews"
   }

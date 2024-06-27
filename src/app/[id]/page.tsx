@@ -2,10 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Eye, Github } from "lucide-react";
 import * as Challenge from "@/components/ChallengesSection/data/challenges.json";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export default function Page({ params: { id } }: { params: { id: string } }) {
   const challenge = Challenge.find((challenge) => challenge.id === id);
-  console.log(challenge);
+
+  if (!challenge) return null
+
   return (
     <section>
       <h1 className="text-4xl font-extrabold py-2">{challenge.title}</h1>
@@ -32,12 +35,16 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
       </ul>
       <div className="w-full py-6 flex justify-center">
         <div className="flex justify-around w-[300px]">
-          <Button className="w-[120px]">
-            <Github className="mr-2 h-4 w-4" /> Github
-          </Button>
-          <Button className="w-[120px]">
-            <Eye className="mr-2 h-4 w-4" /> Preview
-          </Button>
+          <Link href={challenge.repository}>
+            <Button className="w-[120px]">
+              <Github className="mr-2 h-4 w-4" /> Github
+            </Button>
+          </Link>
+          <Link href={`${id}/preview`}>
+            <Button className="w-[120px]">
+              <Eye className="mr-2 h-4 w-4" /> Preview
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
